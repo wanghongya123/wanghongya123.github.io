@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单</title>
+	<style>
+	.ward{width: 500px;background-color: #359;margin:0 auto;}
+	h1{text-align: center;padding-top: 20px;color:#bbb;}
+	form{text-align:left;margin:0 auto;line-height:30px;}
+	#name{margin-top: 10px;width: 200px;height: 30px;outline:1px solid red;}
+	#dl{margin:0 auto;}
+	</style>
+</head>
+<body>
+	<div class="ward">
+		<h1>统计表</h1>
+		<form action="">
+		<label for="name">姓名:  </label>
+		<input id="name" type="text"  value=""><!--value 默认显示在文本框中的 --><!-- 文本框 --><br>
+		<label for="sex">性别:  </label>
+		<input id="sex" type="radio" name="a" value="a">男
+		<input id="sex" type="radio" name="a" value="a">女<!-- 单选框 --><br>
+		<label for="ccb">属性：</label>
+		<input id="ccb" type="checkbox" checked="checked" disabled="true" name="b" value="b">土
+		<input id="ccb" type="checkbox" name="b" value="b">火      <!-- 多选框 -->
+		<input id="ccb" type="checkbox" name="b" value="b">金
+		<input id="ccb" type="checkbox" name="b" value="b">水<br>
+		<label for="di">地址：</label>
+		<select name="" id="dz"><!-- 多项选择 -->
+			<option value="a"selected="selected">地球</option>
+			<option value="a">火星</option>
+			<option value="a">金星</option>
+			<option value="a" >水星</option><!-- selected默认值 -->
+		</select><br>
+
+		<label for="jian">简介：</label>
+		<textarea id="jian"name="c" id="" cols="35" rows="5">textarea 文本域 textarea textarae textarea textarea textarea textarea textarea 文本域 textarea textarae textarea textarea textarea textarea textarea 文本域 textarea textarae textarea textarea textarea textarea
+		</textarea><br>
+
+		<label for="dlname">登录名：</label>
+		<input id="dlname" type="text"  value=""><br>
+		<label for="dlname">登录密码：</label>
+		<input type="password" name="a" value=""><!-- 密码 --><br>
+		<a href="http://www.w3school.com.cn"><input id="dl" type="button" value="登录"></a><!-- 登录按钮 --><br>
+		
+
+	</form>
+	</div>
+	
+</body>
+</html>

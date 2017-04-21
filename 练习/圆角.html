@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>圆角</title>
+	<style>
+	@keyframes myfirst{
+		    0%{transform: translate(0px , 0px) rotate(0deg)}
+			25%{transform:translate(80px , 80px) rotate(360deg)}
+			50%{transform: translate(170px , 170px) rotate(-360deg)}
+			75%{transform: translate(250px , 250px) rotate(360deg)}
+			100%{transform: translate(0px , 170px) rotate(-360deg)}
+	}
+	.clear{clear:both;}
+	.zhuan{width: 200px;height: 170px; transition-property:transform;
+			transition-duration:5s;
+		transition-timing-function:linear;
+		transition-delay:0s;
+
+		-webkit-animation: myfirst 2s infinite alternate;
+		-o-animation: myfirst 2s infinite alternate;
+		animation: myfirst 2s infinite alternate;
+
+	}
+	.zhuan:hover{transform:translate(0px , 170px) rotate(360deg) scale(0.5 , 0.5) ;}
+		.yuan{width: 80px;height: 80px;border:3px solid pink;}
+		.yua{width: 50px;height: 50px;border:3px solid pink;position: absolute;}
+		.o{border-radius:0px 80px;float: left;background-color: #fff;
+			transition-property:all;
+			transition-duration:7s;
+		transition-timing-function:linear;
+		transition-delay:0s;
+		}
+		.o:hover{background-color: #f00ba7;transform:translate(80px , 170px) rotate(60deg) skew(60deg , 60deg);border-color:lightblue;}
+		.n{border-radius:80px 0px;float: left;transition-property:transform;
+			transition-duration:7s;
+		transition-timing-function:linear;
+		transition-delay:0s;}
+		.n:hover{transform:translate(50px , 100px) rotate(90deg);}
+		.l{border-radius: 80px 0px;float: left;clear:both;}
+		.k{border-radius: 0px 80px;float: left;}
+		.o1{border-radius:0px 50px;float: left;}
+		.n1{border-radius:50px 0px;float: left;}
+		.l1{border-radius: 50px 0px;float: left;clear:both;}
+		.k1{border-radius: 0px 50px;float: left;}
+		.box{width: 200px;height: 200px;background-color: blue;}
+	</style>
+</head>
+<body>
+	<div class="zhuan">
+		<div class="yuan o"></div>
+		<div class="yuan n"></div>
+		<div class="yuan l"></div>
+		<div class="yuan k"></div>
+	</div>
+	<div class="clear"></div>
+	<div class="yuan o"></div>
+	<div class="yuan n"></div>
+	<div class="yuan l"></div>
+	<div class="yuan k"></div>
+	<div class="clear"></div>
+
+</body>
+</html>
